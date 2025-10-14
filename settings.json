@@ -1,7 +1,7 @@
 {
   "configuration": {
-    "images-folder": "",
-    "internal-folder": "",
+    "images-folder": "/root/sse-images/input",
+    "internal-folder": "/root/sse-images/output_tmp",
     "demo-mode": false
   },
   "sets-of-classes": [
