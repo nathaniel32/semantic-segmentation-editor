@@ -68,7 +68,7 @@ function generatePCDOutput(req, res, next) {
         let out = "VERSION .7\n";
         out += hasRgb ? "FIELDS x y z rgb label object\n" : "FIELDS x y z label object\n";
         out += hasRgb ? "SIZE 4 4 4 4 4 4\n" : "SIZE 4 4 4 4 4\n";
-        out += hasRgb ? "TYPE F F F I I I\n" : "TYPE F F F I I\n";
+        out += hasRgb ? "TYPE F F F U I I\n" : "TYPE F F F I I\n";
         out += hasRgb ? "COUNT 1 1 1 1 1 1\n" : "COUNT 1 1 1 1 1\n";
         out += "WIDTH " + pcdContent.header.width + "\n";
         out += "HEIGHT " + pcdContent.header.height + "\n";
